@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Landing Page</title>
+    <style>
+        a{
+            
+            color:white;
+            padding-left:2%;
+            text-decoration: none;
+            transition-duration: 0.6s;
+        }
+        a:hover{
+            color:black;
+            border-radius:8px;
+        }
+        .nav{
+            padding-top:20px;
+            width:100%;
+            position:fixed;
+            height:40px;
+            color:black;
+            padding-left:30%;
+            background-color:#48a84b;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        header {
+            margin-left: auto;
+            background: #48a84b;
+            color: white;
+            padding: 50px 20px;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        .btn {
+            background: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition-duration: 0.5s;
+        }
+        .btn:hover {
+            background: #45a049;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .schedule-item {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .speaker img {
+            width: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        #img{
+            background-size: cover;
+        }
+        #img:hover{
+            width:110%;
+            height:110%;
+        }
+        @media (max-width: 600px) {
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="nav">
+            <a href="#Home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#contact">Contact</a> 
+    </nav><br><br>
+<section id="Home">
+<header style="background-image: url(https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?fit=crop&w=1600&q=80);height:250px;background-size: cover;">
+
+    <h1>Annual Tech Conference 2025</h1>
+    <p>Join us for an unforgettable experience of innovation and networking.</p>
+    <a href="#register" class="btn">Register Now</a>
+</header>
+</section>
+    
+
+<section id="abouttheevent">
+    <div class="container">
+        <h2>About the Event</h2>
+        <p>Our annual tech conference brings together industry leaders, innovators, and enthusiasts to discuss the latest trends and future of technology.</p>
+    </div>
+</section>
+
+<section id="schedule">
+    <div class="container">
+        <h2>Event Schedule</h2>
+        <div class="card">
+            <div class="schedule-item"><strong>9:00 AM</strong> - Opening Keynote</div>
+            <div class="schedule-item"><strong>11:00 AM</strong> - Panel Discussion</div>
+            <div class="schedule-item"><strong>2:00 PM</strong> - Networking Session</div>
+        </div>
+    </div>
+</section>
+
+<section id="speakers">
+    <div class="container">
+        <h2>Meet Our Speakers</h2>
+        <div class="card speaker">
+            <img src="https://via.placeholder.com/100" alt="Speaker 1">
+            <h3>John Doe</h3>
+            <p>CEO, Tech Innovations</p>
+        </div>
+        <div class="card speaker">
+            <img src="https://via.placeholder.com/100" alt="Speaker 2">
+            <h3>Jane Smith</h3>
+            <p>CTO, Future Tech</p>
+        </div>
+    </div>
+</section>
+
+<section id="register">
+    <div class="container">
+        <h2>Register Now</h2>
+        <p>Secure your spot for the event by filling out the form below.</p>
+        <form>
+            <input type="text" placeholder="Your Name" required style="padding: 10px; width: 80%; margin-bottom: 10px;">
+            <input type="email" placeholder="Your Email" required style="padding: 10px; width: 80%; margin-bottom: 10px;"><br>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</section>
+<section id="contact">
+    <div class="container">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need further information, please feel free to contact us using the form below.</p>
+            <form>
+                <input type="text" placeholder="Your Name" required style="padding: 10px; width: 80%; margin-bottom: 10px;">
+                <input type="email" placeholder="Your Email" required style="padding: 10px; width: 80%; margin-bottom: 10px;">
+                <textarea placeholder="Your Message" required style="padding: 10px; width: 80%; margin-bottom: 10px; height: 100px;"></textarea><br>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Welcome to our annual tech conference! Our event brings together industry leaders, innovators, and enthusiasts to discuss the latest trends and future of technology. We aim to foster innovation and collaboration in the tech industry.</p>
+            <p>Join us for an unforgettable experience of learning, networking, and growth. Our mission is to create a platform where ideas can be shared, and new connections can be made.</p>
+        </div>
+    </section>
+    <p>&copy; 2025 Tech Conference. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
